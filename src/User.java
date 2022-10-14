@@ -19,6 +19,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" + "username='" + username + '\'' + ", debt=" + debt + '}';
+        return "User{" + "username='" + username + '\'' + '}';
     }
 }
