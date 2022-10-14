@@ -38,7 +38,7 @@ public class ShopBis {
         this.debtorsList = debtorsList;
     }
 
-    public HashMap<UserBis, Double> splitExpenseDebtors(UserBis creditor, LinkedList debtorsList ){
+    public HashMap<UserBis, Double> splitExpenseDebtors(UserBis creditor, List debtorsList ){
         HashMap<UserBis, Double> debtorsHashmap=new HashMap<>();
         int debtorsNumber= debtorsList.size();
         double expenseDivided = expense / (debtorsNumber + 1);
