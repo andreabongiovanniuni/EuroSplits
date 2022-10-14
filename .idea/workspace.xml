@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="Totally changed user" />
+    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="n">
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +78,14 @@
       <updated>1665654090881</updated>
       <workItem from="1665654548213" duration="591000" />
     </task>
+    <task id="LOCAL-00001" summary="n">
+      <created>1665741395720</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665741395720</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,5 +101,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="n" />
+    <option name="LAST_COMMIT_MESSAGE" value="n" />
   </component>
 </project>
