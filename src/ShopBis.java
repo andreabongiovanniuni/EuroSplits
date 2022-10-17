@@ -6,7 +6,9 @@ public class ShopBis {
     double expense;
     UserBis creditor;
 
-    List<UserBis> debtorsList;
+    int id;
+
+     List<UserBis> debtorsList;
 
     public ShopBis(double expense, UserBis creditor, List<UserBis> debtorsList) {
         this.expense = expense;
