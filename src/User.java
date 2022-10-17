@@ -4,6 +4,10 @@ public class User {
     String username;
     HashMap<String, Double> debt = new HashMap<>(); // HashMap<creditor, debtvalue>
 
+    public User(){
+        this.username = "";
+        this.debt = null;
+    }
     public User(String username, HashMap debt) {
         this.username = username;
     }
