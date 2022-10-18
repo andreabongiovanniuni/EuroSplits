@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="mo ho capito">
+    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="teoric complero">
+      <change afterPath="$PROJECT_DIR$/src/UI/Page1.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Page1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShopBis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShopBis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserBis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +73,20 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="EuroSplit_test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -130,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665769761903</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="teoric complero">
+      <created>1666006596786</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666006596786</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +176,7 @@
     <MESSAGE value="classi bis per fine didattico" />
     <MESSAGE value="ho tolto un linked ma non ho capito" />
     <MESSAGE value="mo ho capito" />
-    <option name="LAST_COMMIT_MESSAGE" value="mo ho capito" />
+    <MESSAGE value="teoric complero" />
+    <option name="LAST_COMMIT_MESSAGE" value="teoric complero" />
   </component>
 </project>
