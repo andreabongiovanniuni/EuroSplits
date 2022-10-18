@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="A/N 1">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_26__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_31__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_33__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_33__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_10_2022_11_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_10_2022_11_46__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_29__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_31__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_39__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_10_2022_11_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_10_2022_11_46__Changes_.xml" afterDir="false" />
+    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)">
+      <change afterPath="$PROJECT_DIR$/src/SplitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShopBis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShopBis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserBis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +82,8 @@
       <updated>1665654090881</updated>
       <workItem from="1665654548213" duration="591000" />
       <workItem from="1665656279475" duration="475000" />
+      <workItem from="1666075751124" duration="1046000" />
+      <workItem from="1666120992407" duration="4163000" />
     </task>
     <task id="LOCAL-00001" summary="A/N">
       <created>1665656306151</created>
@@ -98,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665656306151</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)">
+      <created>1666042738559</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666042738559</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A/N" />
-    <option name="LAST_COMMIT_MESSAGE" value="A/N" />
+    <MESSAGE value="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)" />
   </component>
 </project>
