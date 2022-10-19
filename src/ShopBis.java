@@ -5,20 +5,19 @@ import java.util.Set;
 
 public class ShopBis extends UserBis{
     /** contiene il valore totale della spesa*/
-    double total;
-    /** Persona che anticipa i soldi per tutti(non per forza deve partecipare alla spesa) */
-    UserBis creditor;
+    public double total;
+    /** Utente che anticipa i soldi per tutti(non per forza deve partecipare alla spesa) */
+    public UserBis creditor;
 
     /** id della spesa */
-    int id;
+    public int id;
 
     /** Lista delle persone che partecipano alla spesa */
-     List<UserBis> participants;
+    public List<UserBis> participants;
 
      /** costruttore */
-    public ShopBis(double expense, UserBis creditor, List<UserBis> participants) {
-        super();
-        this.total = expense;
+    public ShopBis(double total, UserBis creditor, List<UserBis> participants) {
+        this.total = total;
         this.creditor = creditor;
         this.participants = participants;
     }
@@ -51,6 +50,11 @@ public class ShopBis extends UserBis{
     /** setta/cambia la lista di utenti che partecipano alla spesa */
     public void setParticipants(List<UserBis> debtorsList) {
         this.participants = debtorsList;
+    }
+
+    @Override
+    public String toString() {
+        return "ShopBis{" + "total=" + total + ", creditor=" + creditor + ", id=" + id + ", participants=" + participants + '}';
     }
 
     public HashMap<UserBis, Double> splitExpenseDebtors(UserBis creditor, List <UserBis> debtorsList ){
@@ -104,10 +108,17 @@ public class ShopBis extends UserBis{
 
     /** NotEqualSplit divide in parti disuguali tra i partecipanti */
     public void NotEqualSplit(HashMap<UserBis, Double> amounts){
-
+        if(amounts.size() != participants.size()) {
+            System.out.println("Errore: Il numero di utenti passati come parametro tramite HashMap non corrisponde al" +
+                    " numero " +
+                    "di partecipanti della spesa");
+            return;
+        }
         Set<UserBis> keys = amounts.keySet();
         for(UserBis key : keys){
-            key.debtUpdate(amounts.get(key), creditor.getUsername());
+            if(!Objects.equals(creditor.getUsername(), key.getUsername())){
+                key.debtUpdate(amounts.get(key), creditor.getUsername());
+            }
         }
     }
 
@@ -117,8 +128,13 @@ public class ShopBis extends UserBis{
      * SpecialSplit tiene conto della spesa comune tra tutti i partecipanti e in seguito considera i valori condivisi
      * da sottogruppi di partecipants
      */
-    public void SpecialSplit(double common, int[] prices, HashMap<Integer, List<UserBis>> users2){
+    public void SpecialSplit(double[] prices, HashMap<Integer, List<UserBis>> users2){
         //common pay
+        double specialstotal = 0;
+        for(double i : prices){
+            specialstotal += i;
+        }
+        double common = total - specialstotal;
         EqualSplit(common, participants);
 
         //split the special products

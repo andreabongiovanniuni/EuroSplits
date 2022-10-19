@@ -2,12 +2,12 @@ import java.util.HashMap;
 
 public class UserBis {
     /** nome dell'utente corrente */
-    String username;
+    public String username;
 
     /** debts contiene l'elenco dei creditori dell'utente corrente e i rispettivi debiti*/
-    HashMap<String, Double> debts;
+    public HashMap<String, Double> debts;
 
-    /**costruttore di UserBis*/
+    /** costruttore di UserBis */
 
     public UserBis(String username) {
         this.username = username;
@@ -47,6 +47,10 @@ public class UserBis {
         }
     }
 
+    @Override
+    public String toString() {
+        return "UserBis{" + "username='" + username + '\'' + ", debts=" + debts + '}';
+    }
 
     public HashMap<UserBis, Double> splitExpenseCreditors(ShopBis shopBis) {
         HashMap<UserBis, Double> creditorsHashmap = new HashMap<>();
