@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="inizio Interfaccia Grafica">
-      <change afterPath="$PROJECT_DIR$/src/EqualSplitGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotEqualSplitGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SpecialSplitGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SplitModGUI.java" afterDir="false" />
+    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="altre gui">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_10_2022_11_46_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_10_2022_11_46__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_10_2022_11_46_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_10_2022_11_46__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddShopGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddShopGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddUserGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddUserGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EqualSplitGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EqualSplitGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Group.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LaunchPageGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaunchPageGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShopSplitGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddShopGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/addUserGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddUserGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShopBis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SplitModGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SplitModGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SplitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SplitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBis.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +113,11 @@
       <workItem from="1666257161422" duration="853000" />
       <workItem from="1666259143909" duration="1089000" />
       <workItem from="1666263020201" duration="29700000" />
-      <workItem from="1666341726617" duration="6945000" />
+      <workItem from="1666341726617" duration="7014000" />
+      <workItem from="1666352828789" duration="101000" />
+      <workItem from="1666356572297" duration="4524000" />
+      <workItem from="1666367184829" duration="800000" />
+      <workItem from="1666368170605" duration="2234000" />
     </task>
     <task id="LOCAL-00001" summary="A/N">
       <created>1665656306151</created>
@@ -134,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666343437421</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="altre gui">
+      <created>1666349182802</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666349182802</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +176,7 @@
     <MESSAGE value="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)" />
     <MESSAGE value="-aggiornato il metodo NotEqualSplit&#10;-aggiunto classe SplitTest per verificare la validità dei metodi split&#10;-altre cosine" />
     <MESSAGE value="inizio Interfaccia Grafica" />
-    <option name="LAST_COMMIT_MESSAGE" value="inizio Interfaccia Grafica" />
+    <MESSAGE value="altre gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="altre gui" />
   </component>
 </project>

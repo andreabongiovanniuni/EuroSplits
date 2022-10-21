@@ -4,16 +4,16 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class AddShopGUI extends JFrame implements ActionListener {
+    Group g1;
+    Shop sh;
     JTextField totaltext;
     JTextField ntext;
     JTextField nametext;
     JTextField datatext;
-    
     JButton create;
-    public AddShopGUI(){
+    public AddShopGUI(Group g){
 
-
-
+        g1 = g;
 
         JPanel panel = new JPanel();
         panel.setBackground(Color.cyan);
@@ -95,6 +95,9 @@ public class AddShopGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == create){
+
+            sh = new Shop(Double.parseDouble(totaltext.getText()), new User(nametext.getText()), g1.getGroup());
+
             System.out.println("Aggiunta la spesa di importo " + totaltext.getText() + " divisa in " + ntext.getText() +
                     ", " +
                     "per gli amici " + nametext.getText() + ", effettuata il " + datatext.getText() );
@@ -103,7 +106,9 @@ public class AddShopGUI extends JFrame implements ActionListener {
             ntext.setEnabled(false);
             nametext.setEnabled(false);
             datatext.setEnabled(false);
-            new SplitModGUI();
+            new SplitModGUI(sh, g1);
+            this.setVisible(false);
+
         }
     }
 }

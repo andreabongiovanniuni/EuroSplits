@@ -2,17 +2,18 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class LaunchPageGUI extends JFrame implements ActionListener {
 
-
+    Group g1;
     JButton button = new JButton();
     JButton button2 = new JButton();
     
     JButton adduserbutton = new JButton();
 
-    public LaunchPageGUI(){
-
+    public LaunchPageGUI(Group g){
+        g1 = g;
         ImageIcon icon = new ImageIcon("euro.png");
 
 
@@ -85,13 +86,20 @@ public class LaunchPageGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == button){
-            new AddShopGUI();
+            new AddShopGUI(g1);
+            this.setVisible(false);
         }
         else if(e.getSource() == button2){
-            new ShopStoryGUI();
+            ArrayList<User> users = g1.getGroup();
+            for(User o : users){
+                System.out.println(o);
+            }
+
+            //new ShopStoryGUI();
         }
         else if(e.getSource() == adduserbutton){
-            new AddUserGUI();
+            new AddUserGUI(g1);
+            this.setVisible(false);
         }
     }
 }

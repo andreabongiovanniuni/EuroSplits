@@ -1,19 +1,17 @@
 import java.util.ArrayList;
-import java.util.List;
+public class Group extends User {
 
-public class Group extends UserBis{
-
-    List<UserBis> group;
+    ArrayList<User> group;
 
     public Group(){
-        group = new ArrayList<UserBis>();
+        group = new ArrayList<>();
     }
 
-    public void addUser(UserBis u){
+    public void addUser(User u){
         group.add(u);
     }
 
-    public List<UserBis> getGroup() {
+    public ArrayList<User> getGroup() {
         return group;
     }
 

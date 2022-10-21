@@ -4,12 +4,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class SplitModGUI extends JFrame implements ActionListener {
-
+    Shop sh1;
+    Group g1;
     JButton equalSplitButton;
     JButton notEqualSplitButton;
     JButton specialSplitButton;
-
-    public SplitModGUI(){
+    public SplitModGUI(Shop sh, Group g){
+        sh1 = sh;
+        g1 = g;
 
         JLabel label = new JLabel();
         label.setText("Scegli la Modalità");
@@ -24,13 +26,13 @@ public class SplitModGUI extends JFrame implements ActionListener {
         label2.setBounds(300, 75, 900, 150);
 
         equalSplitButton = new JButton("EqualSplit");
-        equalSplitButton.setEnabled(true);
+        equalSplitButton.addActionListener(this);
 
         notEqualSplitButton = new JButton("NotEqualSplit");
-        notEqualSplitButton.setEnabled(true);
+        notEqualSplitButton.addActionListener(this);
 
         specialSplitButton = new JButton("SpecialSplit");
-        specialSplitButton.setEnabled(true);
+        specialSplitButton.addActionListener(this);
 
 
         this.setLayout(null);
@@ -57,7 +59,12 @@ public class SplitModGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == equalSplitButton){
-            new EqualSplitGUI();
+            System.out.println("spesa splittata");
+            sh1.EqualSplit();
+            new LaunchPageGUI(g1);
+            this.setVisible(false);
+
+            //new EqualSplitGUI(sh1);
         }
         else if(e.getSource() == notEqualSplitButton){
             new NotEqualSplitGUI();

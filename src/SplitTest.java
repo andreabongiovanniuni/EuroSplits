@@ -3,12 +3,12 @@ import java.util.*;
 public class SplitTest {
 
     public static void main(String[] args) {
-       UserBis u1 = new UserBis("Rick");
-        UserBis u2 = new UserBis("Gigi");
-        UserBis u3 = new UserBis("Noob");
-        UserBis u4 = new UserBis("Lele");
-        UserBis u5 = new UserBis("Ali");
-        List<UserBis> users = new ArrayList<>(List.of(u1, u2, u3, u4, u5));
+       User u1 = new User("Rick");
+        User u2 = new User("Gigi");
+        User u3 = new User("Noob");
+        User u4 = new User("Lele");
+        User u5 = new User("Ali");
+     ArrayList<User> users = new ArrayList<>(List.of(u1, u2, u3, u4, u5));
         /**
         List<UserBis> sb1 = new ArrayList<>(List.of(u1, u5));
         List<UserBis> sb2 = new ArrayList<>(List.of(u1));
@@ -42,24 +42,24 @@ public class SplitTest {
         */
         //Special Product
         double[] a = {2.86, 1.66, 1.22, 1.91, 2.95, 3.5, 2.43, 2.60, 2.79, 1.28, 0.48, 0.96, 1.33};
-        List<UserBis> sb1 = new ArrayList<>(List.of(u1, u5));
-        List<UserBis> sb2 = new ArrayList<>(List.of(u1));
-        List<UserBis> sb3 = new ArrayList<>(List.of(u1, u3));
-        List<UserBis> sb4 = new ArrayList<>(List.of(u1));
-        List<UserBis> sb5 = new ArrayList<>(List.of(u1, u4));
-        List<UserBis> sb6 = new ArrayList<>(List.of(u2, u3, u5));
-        List<UserBis> sb7 = new ArrayList<>(List.of(u1, u5));
-        List<UserBis> sb8 = new ArrayList<>(List.of(u1, u3, u4, u5));
-        List<UserBis> sb9 = new ArrayList<>(List.of(u1, u2, u4, u5));
-        List<UserBis> sb10 = new ArrayList<>(List.of(u1, u3, u5, u4));
-        List<UserBis> sb11 = new ArrayList<>(List.of(u1));
-        List<UserBis> sb12 = new ArrayList<>(List.of(u2, u4, u5));
-        List<UserBis> sb13 = new ArrayList<>(List.of(u1, u2, u4));
-        ShopBis sh = new ShopBis(32.61, u1, users);
+     ArrayList<User> sb1 = new ArrayList<>(List.of(u1, u5));
+     ArrayList<User> sb2 = new ArrayList<>(List.of(u1));
+     ArrayList<User> sb3 = new ArrayList<>(List.of(u1, u3));
+     ArrayList<User> sb4 = new ArrayList<>(List.of(u1));
+     ArrayList<User> sb5 = new ArrayList<>(List.of(u1, u4));
+     ArrayList<User> sb6 = new ArrayList<>(List.of(u2, u3, u5));
+     ArrayList<User> sb7 = new ArrayList<>(List.of(u1, u5));
+     ArrayList<User> sb8 = new ArrayList<>(List.of(u1, u3, u4, u5));
+     ArrayList<User> sb9 = new ArrayList<>(List.of(u1, u2, u4, u5));
+     ArrayList<User> sb10 = new ArrayList<>(List.of(u1, u3, u5, u4));
+     ArrayList<User> sb11 = new ArrayList<>(List.of(u1));
+     ArrayList<User> sb12 = new ArrayList<>(List.of(u2, u4, u5));
+     ArrayList<User> sb13 = new ArrayList<>(List.of(u1, u2, u4));
+        Shop sh = new Shop(32.61, u1, users);
 
 
 
-        LinkedHashMap<Integer, List<UserBis>> mp2 = new LinkedHashMap<>();
+        LinkedHashMap<Integer, List<User>> mp2 = new LinkedHashMap<>();
 
         mp2.put(1, sb1);
         mp2.put(2, sb2);

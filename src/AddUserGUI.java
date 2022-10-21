@@ -5,9 +5,12 @@ import java.awt.event.ActionListener;
 
 public class AddUserGUI extends JFrame implements ActionListener {
 
+    Group g1;
     JButton create;
+    JButton indietro;
     JTextField usernametext;
-    public AddUserGUI(){
+    public AddUserGUI(Group g){
+        g1 = g;
 
         JLabel label = new JLabel();
         label.setText("Aggiungi un nuovo utente al Gruppo");
@@ -39,9 +42,15 @@ public class AddUserGUI extends JFrame implements ActionListener {
         panel.setBackground(Color.cyan);
         panel.setBorder(BorderFactory.createLineBorder(Color.blue, 3));
 
+
+
         create = new JButton("AGGIUNGI");
         create.addActionListener(this);
         create.setFont(new Font(null, Font.BOLD, 15));
+
+        indietro = new JButton("indietro");
+        indietro.addActionListener(this);
+
 
         usernametext = new JTextField("Username");
         usernametext.setPreferredSize(new Dimension(275, 50));
@@ -66,7 +75,9 @@ public class AddUserGUI extends JFrame implements ActionListener {
         this.add(label4);
         this.add(label5);
         this.add(label6);
+        this.add(indietro);
 
+        indietro.setBounds(150, 575, 200, 50);
         create.setBounds(650, 250, 200, 50);
         panel.setBounds(275, 250, 300, 70);
         label.setBounds(100, 5, 900, 150);
@@ -85,7 +96,13 @@ public class AddUserGUI extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("L'utente " + usernametext.getText() + " è stato aggiunto al gruppo!");
-
+        if(e.getSource() == create) {
+            g1.addUser(new User(usernametext.getText()));
+            System.out.println("L'utente " + usernametext.getText() + " è stato aggiunto al gruppo!");
+        }
+        else if(e.getSource() == indietro){
+            new LaunchPageGUI(g1);
+            this.setVisible(false);
+        }
     }
 }
