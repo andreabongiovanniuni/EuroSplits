@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.List;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class ShopBis extends UserBis{
     /** contiene il valore totale della spesa*/
@@ -128,7 +125,7 @@ public class ShopBis extends UserBis{
      * SpecialSplit tiene conto della spesa comune tra tutti i partecipanti e in seguito considera i valori condivisi
      * da sottogruppi di partecipants
      */
-    public void SpecialSplit(double[] prices, HashMap<Integer, List<UserBis>> users2){
+    public void SpecialSplit(double[] prices, LinkedHashMap<Integer, List<UserBis>> users2){
         //common pay
         double specialstotal = 0;
         for(double i : prices){

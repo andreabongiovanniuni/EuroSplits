@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)">
-      <change afterPath="$PROJECT_DIR$/src/SplitTest.java" afterDir="false" />
+    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="-aggiornato il metodo NotEqualSplit&#10;-aggiunto classe SplitTest per verificare la validità dei metodi split&#10;-altre cosine">
+      <change afterPath="$PROJECT_DIR$/src/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LaunchPageGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShopSplitGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShopStoryGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/addUserGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_26_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_26__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_31_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_31__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_33_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022_12_33__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_29_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_29__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_31_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_31__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_39_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_10_2022_12_39__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShopBis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShopBis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserBis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SplitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SplitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +85,19 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Università/2° anno inginf/Programmazione ad Oggetti/EuroSplits/src&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Università\2° anno inginf\Programmazione ad Oggetti\EuroSplits\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Università\2° anno inginf\Programmazione ad Oggetti\EuroSplits" />
+      <recent name="D:\Università\2° anno inginf\Programmazione ad Oggetti\EuroSplits\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -83,7 +109,15 @@
       <workItem from="1665654548213" duration="591000" />
       <workItem from="1665656279475" duration="475000" />
       <workItem from="1666075751124" duration="1046000" />
-      <workItem from="1666120992407" duration="4163000" />
+      <workItem from="1666120992407" duration="4443000" />
+      <workItem from="1666125928124" duration="783000" />
+      <workItem from="1666161884634" duration="3858000" />
+      <workItem from="1666205734744" duration="6367000" />
+      <workItem from="1666252722067" duration="4352000" />
+      <workItem from="1666257161422" duration="853000" />
+      <workItem from="1666259143909" duration="1089000" />
+      <workItem from="1666263020201" duration="29700000" />
+      <workItem from="1666341726617" duration="1176000" />
     </task>
     <task id="LOCAL-00001" summary="A/N">
       <created>1665656306151</created>
@@ -99,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666042738559</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-aggiornato il metodo NotEqualSplit&#10;-aggiunto classe SplitTest per verificare la validità dei metodi split&#10;-altre cosine">
+      <created>1666125370417</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666125370417</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +160,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A/N" />
     <MESSAGE value="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)" />
+    <MESSAGE value="-aggiornato il metodo NotEqualSplit&#10;-aggiunto classe SplitTest per verificare la validità dei metodi split&#10;-altre cosine" />
+    <option name="LAST_COMMIT_MESSAGE" value="-aggiornato il metodo NotEqualSplit&#10;-aggiunto classe SplitTest per verificare la validità dei metodi split&#10;-altre cosine" />
   </component>
 </project>
