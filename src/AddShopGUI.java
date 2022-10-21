@@ -3,14 +3,14 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ShopSplitGUI extends JFrame implements ActionListener {
+public class AddShopGUI extends JFrame implements ActionListener {
     JTextField totaltext;
     JTextField ntext;
     JTextField nametext;
     JTextField datatext;
     
     JButton create;
-    public ShopSplitGUI(){
+    public AddShopGUI(){
 
 
 
@@ -103,7 +103,7 @@ public class ShopSplitGUI extends JFrame implements ActionListener {
             ntext.setEnabled(false);
             nametext.setEnabled(false);
             datatext.setEnabled(false);
-
+            new SplitModGUI();
         }
     }
 }

@@ -85,13 +85,13 @@ public class LaunchPageGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == button){
-            new ShopSplitGUI();
+            new AddShopGUI();
         }
         else if(e.getSource() == button2){
             new ShopStoryGUI();
         }
         else if(e.getSource() == adduserbutton){
-
+            new AddUserGUI();
         }
     }
 }
