@@ -49,7 +49,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "UserBis{" + "username='" + username + '\'' + ", debts=" + debts + '}';
+        return "L'utente " + username + " ha i seguenti debiti: " +  debts + '\n' ;
     }
 
     public HashMap<User, Double> splitExpenseCreditors(Shop shop) {

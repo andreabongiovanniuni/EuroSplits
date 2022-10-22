@@ -1,15 +1,15 @@
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 public class LaunchPageGUI extends JFrame implements ActionListener {
-
     Group g1;
+
     JButton button = new JButton();
     JButton button2 = new JButton();
-    
+    JButton debtsButton= new JButton();
     JButton adduserbutton = new JButton();
 
     public LaunchPageGUI(Group g){
@@ -29,12 +29,20 @@ public class LaunchPageGUI extends JFrame implements ActionListener {
         button2.setFont(new Font(null, Font.BOLD, 25));
         button2.setBorder(BorderFactory.createLineBorder(Color.blue, 2));
 
-        adduserbutton.setBounds(380, 550, 275, 50);
+        adduserbutton.setBounds(150, 550, 350, 50);
         adduserbutton.addActionListener(this);
         adduserbutton.setText("Aggiungi al Gruppo");
         adduserbutton.setFont(new Font(null, Font.BOLD, 20));
         adduserbutton.setBorder(BorderFactory.createLineBorder(Color.blue, 2));
-        
+
+        debtsButton.setBounds(550, 550, 350, 50);
+        debtsButton.addActionListener(this);
+        debtsButton.setText("Mostra i Debiti");
+        debtsButton.setFont(new Font(null, Font.BOLD, 20));
+        debtsButton.setBorder(BorderFactory.createLineBorder(Color.blue, 2));
+
+
+
 
         JLabel label = new JLabel();
         label.setText("Dividi la tua Spesa!");
@@ -61,7 +69,7 @@ public class LaunchPageGUI extends JFrame implements ActionListener {
         ImageIcon userImage = new ImageIcon("adduser.png");
         JLabel userLabel = new JLabel();
         userLabel.setIcon(userImage);
-        userLabel.setBounds(505, 580, 400, 100);
+        userLabel.setBounds(310, 580, 400, 100);
 
 
         this.setLayout(null);
@@ -80,6 +88,7 @@ public class LaunchPageGUI extends JFrame implements ActionListener {
         this.add(cartLabel);
         this.add(shopsLabel);
         this.add(userLabel);
+        this.add(debtsButton);
 
     }
 
@@ -90,16 +99,17 @@ public class LaunchPageGUI extends JFrame implements ActionListener {
             this.setVisible(false);
         }
         else if(e.getSource() == button2){
-            ArrayList<User> users = g1.getGroup();
-            for(User o : users){
-                System.out.println(o);
-            }
-
-            //new ShopStoryGUI();
+            System.out.println("ciao");
+            //new ShopStoryGUI(g1);
+            //this.setVisible(false);
         }
         else if(e.getSource() == adduserbutton){
             new AddUserGUI(g1);
             this.setVisible(false);
+        }
+        else if(e.getSource() == debtsButton){
+            new DebtsGUI(g1);
+            this.setVisible((false));
         }
     }
 }

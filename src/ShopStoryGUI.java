@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 
 public class ShopStoryGUI extends JFrame implements ActionListener {
 
-    public ShopStoryGUI(){
+    public ShopStoryGUI(Group g){
 
     }
 
