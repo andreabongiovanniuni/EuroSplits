@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class SplitModGUI extends JFrame implements ActionListener {
@@ -81,7 +82,7 @@ public class SplitModGUI extends JFrame implements ActionListener {
             this.setVisible(false);
         }
         else if( e.getSource() == specialSplitButton){
-            new SpecialSplitGUI(g1);
+            new PriceGUI(g1, sh1, new ArrayList<>());
             this.setVisible(false);
         }
         else if(e.getSource() == indietroButton){

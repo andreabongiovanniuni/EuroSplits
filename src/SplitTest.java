@@ -40,7 +40,7 @@ public class SplitTest {
         System.out.println(u4);
         System.out.println(u5);
         */
-        //Special Product
+       /* //Special Product
         double[] a = {2.86, 1.66, 1.22, 1.91, 2.95, 3.5, 2.43, 2.60, 2.79, 1.28, 0.48, 0.96, 1.33};
      ArrayList<User> sb1 = new ArrayList<>(List.of(u1, u5));
      ArrayList<User> sb2 = new ArrayList<>(List.of(u1));
@@ -82,7 +82,7 @@ public class SplitTest {
         System.out.println(u3);
         System.out.println(u4);
         System.out.println(u5);
-        System.out.println(sh);
+        System.out.println(sh);*/
     }
 
 }

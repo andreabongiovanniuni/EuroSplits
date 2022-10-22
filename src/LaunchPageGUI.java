@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 
 public class LaunchPageGUI extends JFrame implements ActionListener {
     Group g1;
-
     JButton button = new JButton();
     JButton button2 = new JButton();
     JButton debtsButton= new JButton();
@@ -53,7 +52,7 @@ public class LaunchPageGUI extends JFrame implements ActionListener {
         JLabel label2 = new JLabel();
         label2.setText("EuroSplit");
         label2.setFont(new Font("boh", Font.BOLD, 150));
-        label2.setForeground(Color.cyan);
+        label2.setForeground(Color.orange);
         label2.setBounds(200, 3, 800, 200);
 
         ImageIcon cartImage = new ImageIcon("carrello.png");
@@ -69,7 +68,12 @@ public class LaunchPageGUI extends JFrame implements ActionListener {
         ImageIcon userImage = new ImageIcon("adduser.png");
         JLabel userLabel = new JLabel();
         userLabel.setIcon(userImage);
-        userLabel.setBounds(310, 580, 400, 100);
+        userLabel.setBounds(325, 590, 400, 100);
+
+        ImageIcon bookImage = new ImageIcon("book.png");
+        JLabel bookLabel = new JLabel();
+        bookLabel.setIcon(bookImage);
+        bookLabel.setBounds(700, 590, 400, 100);
 
 
         this.setLayout(null);
@@ -89,19 +93,25 @@ public class LaunchPageGUI extends JFrame implements ActionListener {
         this.add(shopsLabel);
         this.add(userLabel);
         this.add(debtsButton);
+        this.add(bookLabel);
 
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == button){
+           if(g1.getGroup().isEmpty()){
+               JOptionPane.showMessageDialog(null, "Aggiungi persone al gruppo prima di dividere una spesa!",
+                       "Nessuna persona nel gruppo", JOptionPane.ERROR_MESSAGE);
+           }
+           else{
             new AddShopGUI(g1);
             this.setVisible(false);
+           }
         }
         else if(e.getSource() == button2){
             System.out.println("ciao");
-            //new ShopStoryGUI(g1);
-            //this.setVisible(false);
+
         }
         else if(e.getSource() == adduserbutton){
             new AddUserGUI(g1);

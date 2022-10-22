@@ -13,9 +13,9 @@ public class ShowGUI extends JFrame implements ActionListener {
 
         g1= g;
 
-
         JLabel label = new JLabel();
-        label.setText(g.toStringOnlyName());
+        label.setText("<html>" + g.toStringOnlyName().replaceAll("<","&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br/>")
+                + "</html>");
         label.setFont(new Font(null, Font.BOLD, 15));
         label.setForeground(Color.cyan);
 

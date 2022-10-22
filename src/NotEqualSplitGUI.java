@@ -79,15 +79,20 @@ public class NotEqualSplitGUI extends JFrame implements ActionListener {
             if(g1.IsInGroup(usernameText.getText())){
                 m1.put(g1.GetUser(usernameText.getText()), Double.parseDouble(priceText.getText()));
                 new NotEqualSplitGUI(g1, sh1, m1);
+
             }
-            new NotEqualSplitGUI(g1, sh1, m1);
-            this.setVisible(false);
+           else{
+               JOptionPane.showMessageDialog(null, "Non è presente nessun " + usernameText.getText() +
+                        " nel gruppo", "Assente", JOptionPane.WARNING_MESSAGE);
+            }
         }
         else if(e.getSource() == indietroButton){
             new SplitModGUI(g1, sh1);
             this.setVisible(false);
         }
         else if(e.getSource() == endButton){
+            sh1.NotEqualSplit(m1);
+            System.out.println("La Spesa è stata splittata!");
             new LaunchPageGUI(g1);
             this.setVisible(false);
         }

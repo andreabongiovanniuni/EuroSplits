@@ -125,7 +125,7 @@ public class Shop extends User {
      * SpecialSplit tiene conto della spesa comune tra tutti i partecipanti e in seguito considera i valori condivisi
      * da sottogruppi di partecipants
      */
-    public void SpecialSplit(double[] prices, LinkedHashMap<Integer, List<User>> users2){
+    public void SpecialSplit(ArrayList<Double> prices, LinkedHashMap<Integer, List<User>> users2){
         //common pay
         double specialstotal = 0;
         for(double i : prices){
@@ -136,10 +136,12 @@ public class Shop extends User {
 
         //split the special products
         Set<Integer> keys = users2.keySet();
-        int i = 0;
+        Iterator<Double> i = prices.iterator();
         for (Integer key : keys) {
-            EqualSplit(prices[i], users2.get(key));
-            ++i;
+            if(i.hasNext()) {
+                Double p = i.next();
+                EqualSplit(p, users2.get(key));
+            }
         }
     }
 }

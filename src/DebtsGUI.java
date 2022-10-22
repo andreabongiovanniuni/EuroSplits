@@ -16,9 +16,11 @@ public class DebtsGUI extends JFrame implements ActionListener {
        indietro.setFont(new Font(null, Font.BOLD, 15));
 
        JLabel label = new JLabel();
-       label.setText(g.toString());
+       label.setText("<html>" + g.toString().replaceAll("<","&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br/>") +
+               "</html>");
        label.setFont(new Font(null, Font.PLAIN, 25));
        label.setForeground(Color.cyan);
+
 
        JPanel panel = new JPanel();
        panel.add(label);
