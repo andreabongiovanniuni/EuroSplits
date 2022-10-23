@@ -6,9 +6,9 @@ import java.util.HashMap;
 
 public class NotEqualSplitGUI extends JFrame implements ActionListener {
 
-    Group g1;
-    Shop sh1;
-    HashMap<User, Double> m1;
+    Group g;
+    Shop sh;
+    HashMap<User, Double> m;
     JButton assegnaButton;
     JButton indietroButton;
     JButton endButton;
@@ -17,9 +17,9 @@ public class NotEqualSplitGUI extends JFrame implements ActionListener {
 
     public NotEqualSplitGUI(Group g, Shop sh, HashMap<User, Double> m){
 
-        g1 = g;
-        sh1 = sh;
-        m1 = m;
+        this.g = g;
+        this.sh = sh;
+        this.m = m;
 
         usernameText = new JTextField("Username");
         usernameText.setFont(new Font(null, Font.PLAIN, 20));
@@ -76,9 +76,9 @@ public class NotEqualSplitGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == assegnaButton){
-            if(g1.IsInGroup(usernameText.getText())){
-                m1.put(g1.GetUser(usernameText.getText()), Double.parseDouble(priceText.getText()));
-                new NotEqualSplitGUI(g1, sh1, m1);
+            if(g.IsInGroup(usernameText.getText())){
+                m.put(g.GetUser(usernameText.getText()), Double.parseDouble(priceText.getText()));
+                new NotEqualSplitGUI(g, sh, m);
 
             }
            else{
@@ -87,13 +87,13 @@ public class NotEqualSplitGUI extends JFrame implements ActionListener {
             }
         }
         else if(e.getSource() == indietroButton){
-            new SplitModGUI(g1, sh1);
+            new SplitModGUI(g, sh);
             this.setVisible(false);
         }
         else if(e.getSource() == endButton){
-            sh1.NotEqualSplit(m1);
+            sh.NotEqualSplit(m);
             System.out.println("La Spesa è stata splittata!");
-            new LaunchPageGUI(g1);
+            new LaunchPageGUI(g);
             this.setVisible(false);
         }
 

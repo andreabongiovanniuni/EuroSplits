@@ -6,15 +6,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class SplitModGUI extends JFrame implements ActionListener {
-    Shop sh1;
-    Group g1;
+    Shop sh;
+    Group g;
     JButton indietroButton;
     JButton equalSplitButton;
     JButton notEqualSplitButton;
     JButton specialSplitButton;
     public SplitModGUI(Group g, Shop sh){
-        sh1 = sh;
-        g1 = g;
+        this.sh = sh;
+        this.g = g;
 
         indietroButton = new JButton("Indietro");
         indietroButton.addActionListener(this);
@@ -73,20 +73,20 @@ public class SplitModGUI extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == equalSplitButton){
             System.out.println("spesa splittata");
-            sh1.EqualSplit();
-            new LaunchPageGUI(g1);
+            sh.EqualSplit();
+            new LaunchPageGUI(g);
             this.setVisible(false);
         }
         else if(e.getSource() == notEqualSplitButton){
-            new NotEqualSplitGUI(g1, sh1, new HashMap<>());
+            new NotEqualSplitGUI(g, sh, new HashMap<>());
             this.setVisible(false);
         }
         else if( e.getSource() == specialSplitButton){
-            new PriceGUI(g1, sh1, new ArrayList<>());
+            new PriceGUI(g, sh, new ArrayList<>());
             this.setVisible(false);
         }
         else if(e.getSource() == indietroButton){
-            new AddShopGUI(g1);
+            new AddShopGUI(g);
             this.setVisible(false);
         }
     }

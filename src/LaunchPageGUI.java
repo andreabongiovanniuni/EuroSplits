@@ -5,14 +5,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LaunchPageGUI extends JFrame implements ActionListener {
-    Group g1;
+    Group g;
     JButton button = new JButton();
     JButton button2 = new JButton();
     JButton debtsButton= new JButton();
     JButton adduserbutton = new JButton();
 
     public LaunchPageGUI(Group g){
-        g1 = g;
+        this.g = g;
         ImageIcon icon = new ImageIcon("euro.png");
 
 
@@ -100,12 +100,12 @@ public class LaunchPageGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == button){
-           if(g1.getGroup().isEmpty()){
+           if(g.getGroup().isEmpty()){
                JOptionPane.showMessageDialog(null, "Aggiungi persone al gruppo prima di dividere una spesa!",
                        "Nessuna persona nel gruppo", JOptionPane.ERROR_MESSAGE);
            }
            else{
-            new AddShopGUI(g1);
+            new AddShopGUI(g);
             this.setVisible(false);
            }
         }
@@ -114,11 +114,11 @@ public class LaunchPageGUI extends JFrame implements ActionListener {
 
         }
         else if(e.getSource() == adduserbutton){
-            new AddUserGUI(g1);
+            new AddUserGUI(g);
             this.setVisible(false);
         }
         else if(e.getSource() == debtsButton){
-            new DebtsGUI(g1);
+            new DebtsGUI(g);
             this.setVisible((false));
         }
     }

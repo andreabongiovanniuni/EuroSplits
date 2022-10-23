@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="continuo">
-      <change afterPath="$PROJECT_DIR$/src/ParticipantsGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PriceGUI.java" afterDir="false" />
+    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="caricato per sicurezza, però da finire">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AddUserGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddUserGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DebtsGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DebtsGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LaunchPageGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaunchPageGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NotEqualSplitGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NotEqualSplitGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ParticipantsGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParticipantsGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PriceGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PriceGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShowGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShowGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpecialSplitGUI.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SplitModGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SplitModGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SplitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SplitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +111,7 @@
       <workItem from="1666367184829" duration="800000" />
       <workItem from="1666368170605" duration="4523000" />
       <workItem from="1666422570830" duration="19560000" />
-      <workItem from="1666460694390" duration="3272000" />
+      <workItem from="1666460694390" duration="3724000" />
     </task>
     <task id="LOCAL-00001" summary="A/N">
       <created>1665656306151</created>
@@ -165,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666436674456</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="caricato per sicurezza, però da finire">
+      <created>1666464051814</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666464051814</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +194,7 @@
     <MESSAGE value="altre gui" />
     <MESSAGE value="update" />
     <MESSAGE value="continuo" />
-    <option name="LAST_COMMIT_MESSAGE" value="continuo" />
+    <MESSAGE value="caricato per sicurezza, però da finire" />
+    <option name="LAST_COMMIT_MESSAGE" value="caricato per sicurezza, però da finire" />
   </component>
 </project>

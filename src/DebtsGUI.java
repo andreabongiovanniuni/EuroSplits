@@ -6,10 +6,10 @@ import java.awt.event.ActionListener;
 public class DebtsGUI extends JFrame implements ActionListener {
 
     JButton indietro;
-    Group g1;
+    Group g;
 
    public DebtsGUI(Group g){
-       g1 = g;
+       this.g = g;
 
        indietro = new JButton("Indietro");
        indietro.addActionListener(this);
@@ -46,7 +46,7 @@ public class DebtsGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
        if(e.getSource()==indietro){
-           new LaunchPageGUI(g1);
+           new LaunchPageGUI(g);
            this.setVisible(false);
        }
     }

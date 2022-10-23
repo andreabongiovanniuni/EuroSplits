@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class AddUserGUI extends JFrame implements ActionListener {
-    Group g1;
+    Group g;
     JButton create;
     JButton removeButton;
     JButton showButton;
@@ -12,7 +12,7 @@ public class AddUserGUI extends JFrame implements ActionListener {
     JTextField usernametext;
 
     public AddUserGUI(Group g) {
-        g1 = g;
+        this.g = g;
         JLabel label = new JLabel();
         label.setText("Aggiungi un nuovo utente al Gruppo");
         label.setForeground(Color.cyan);
@@ -94,22 +94,22 @@ public class AddUserGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == create) {
-            if (g1.IsInGroup(usernametext.getText())) {
+            if (g.IsInGroup(usernametext.getText())) {
                 JOptionPane.showMessageDialog(null, "L'utente " + usernametext.getText() + " è già presente nel " + "gruppo", "Aggiunta Utente", JOptionPane.ERROR_MESSAGE);
             } else {
-                g1.addUser(new User(usernametext.getText()));
+                g.addUser(new User(usernametext.getText()));
                 System.out.println("L'utente " + usernametext.getText() + " è stato aggiunto al gruppo!");
                 this.setVisible(false);
-                new AddUserGUI(g1);
+                new AddUserGUI(g);
             }
         } else if (e.getSource() == indietro) {
-            new LaunchPageGUI(g1);
+            new LaunchPageGUI(g);
             this.setVisible(false);
         } else if (e.getSource() == showButton) {
-            new ShowGUI(g1);
+            new ShowGUI(g);
             this.setVisible(false);
         } else if (e.getSource() == removeButton) {
-            if (!g1.IsInGroup(usernametext.getText())) {
+            if (!g.IsInGroup(usernametext.getText())) {
                 JOptionPane.showMessageDialog(null, "L'utente " + usernametext.getText() + " non è presente nel " +
                         "gruppo", "Rimozione utente", JOptionPane.ERROR_MESSAGE);
             } else {
@@ -117,10 +117,10 @@ public class AddUserGUI extends JFrame implements ActionListener {
                         "Sei sicuro di voler cancellare " + usernametext.getText() + " dal " + "gruppo?", "Rimozione " +
                                 "Utente", JOptionPane.YES_NO_OPTION);
                 if (answer == 0) {
-                    g1.removeUser(usernametext.getText());
+                    g.removeUser(usernametext.getText());
                     System.out.println("L'utente " + usernametext.getText() + " è stato rimosso dal gruppo!");
                     this.setVisible(false);
-                    new AddUserGUI(g1);
+                    new AddUserGUI(g);
                 }
             }
         }

@@ -8,20 +8,20 @@ import java.util.List;
 
 public class ParticipantsGUI extends JFrame implements ActionListener {
     
-    Group g1;
-    Shop sh1; 
-    ArrayList<Double> p1;
-    LinkedHashMap<Integer, List<User>> u1;
+    Group g;
+    Shop sh;
+    ArrayList<Double> p;
+    LinkedHashMap<Integer, List<User>> u;
     JTextField userText;
     JButton indietroButton;
     JButton aggiungiButton;
     JButton fineButton;
     public ParticipantsGUI(Group g, Shop sh, ArrayList<Double> p, LinkedHashMap<Integer, List<User>> u){
        
-        g1 = g;
-        sh1 = sh;
-        p1 = p;
-        u1 = u;
+        this.g = g;
+        this.sh = sh;
+        this.p = p;
+        this.u = u;
 
         indietroButton = new JButton("Indietro");
         indietroButton.setFont(new Font(null, Font.PLAIN, 20));

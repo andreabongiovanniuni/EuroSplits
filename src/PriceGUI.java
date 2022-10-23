@@ -7,17 +7,17 @@ import java.util.LinkedHashMap;
 
 public class PriceGUI extends JFrame implements ActionListener {
 
-    Group g1;
-    Shop sh1;
+    Group g;
+    Shop sh;
+    ArrayList<Double> p;
     JTextField priceText;
     JButton indietroButton;
     JButton aggiungiButton;
-    ArrayList<Double> p1;
 
     public PriceGUI(Group g, Shop sh, ArrayList<Double> p){
-        g1 = g;
-        sh1 = sh;
-        p1 = p;
+        this.g = g;
+        this.sh = sh;
+        this.p = p;
 
         indietroButton = new JButton("Indietro");
         indietroButton.setFont(new Font(null, Font.PLAIN, 20));
@@ -64,12 +64,12 @@ public class PriceGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == aggiungiButton){
-            p1.add(Double.parseDouble(priceText.getText()));
-            new ParticipantsGUI(g1, sh1, p1, new LinkedHashMap<>());
+            p.add(Double.parseDouble(priceText.getText()));
+            new ParticipantsGUI(g, sh, p, new LinkedHashMap<>());
             this.setVisible(false);
         }
         else if (e.getSource() == indietroButton){
-            new SplitModGUI(g1, sh1);
+            new SplitModGUI(g, sh);
             this.setVisible(false);
         }
     }

@@ -5,13 +5,13 @@ import java.awt.event.ActionListener;
 
 public class ShowGUI extends JFrame implements ActionListener {
 
-    Group g1;
+    Group g;
     JButton indietroButton;
 
 
     public ShowGUI(Group g){
 
-        g1= g;
+        this.g = g;
 
         JLabel label = new JLabel();
         label.setText("<html>" + g.toStringOnlyName().replaceAll("<","&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br/>")
@@ -48,7 +48,7 @@ public class ShowGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == indietroButton){
-            new AddUserGUI(g1);
+            new AddUserGUI(g);
             this.setVisible(false);
         }
 
