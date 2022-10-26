@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="ho tolto un linked ma non ho capito" />
+    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)">
+      <change afterPath="$PROJECT_DIR$/src/SplitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShopBis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShopBis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBis.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +49,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Andrea" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,50 +81,25 @@
       <option name="presentableId" value="Default" />
       <updated>1665654090881</updated>
       <workItem from="1665654548213" duration="591000" />
+      <workItem from="1665656279475" duration="475000" />
+      <workItem from="1666075751124" duration="1046000" />
+      <workItem from="1666120992407" duration="4163000" />
     </task>
-    <task id="LOCAL-00001" summary="n">
-      <created>1665741395720</created>
+    <task id="LOCAL-00001" summary="A/N">
+      <created>1665656306151</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1665741395720</updated>
+      <updated>1665656306151</updated>
     </task>
-    <task id="LOCAL-00002" summary="n">
-      <created>1665741555842</created>
+    <task id="LOCAL-00002" summary="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)">
+      <created>1666042738559</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1665741555842</updated>
+      <updated>1666042738559</updated>
     </task>
-    <task id="LOCAL-00003" summary="shop base">
-      <created>1665741814362</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1665741814362</updated>
-    </task>
-    <task id="LOCAL-00004" summary="classi bis per fine didattico">
-      <created>1665769179119</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1665769179119</updated>
-    </task>
-    <task id="LOCAL-00005" summary="classi bis per fine didattico">
-      <created>1665769286391</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1665769286391</updated>
-    </task>
-    <task id="LOCAL-00006" summary="ho tolto un linked ma non ho capito">
-      <created>1665769594397</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1665769594397</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,10 +117,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="n" />
-    <MESSAGE value="shop base" />
-    <MESSAGE value="classi bis per fine didattico" />
-    <MESSAGE value="ho tolto un linked ma non ho capito" />
-    <option name="LAST_COMMIT_MESSAGE" value="ho tolto un linked ma non ho capito" />
+    <MESSAGE value="A/N" />
+    <MESSAGE value="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto i 3 metodi EqualSplit, NotEqualSplit e SpecialSplit&#10;Aggiunto il metodo debtUpdate&#10;Aggiunto i commenti&#10;cambiato qualche nome(niente di ché, riportabili come erano prima)" />
   </component>
 </project>

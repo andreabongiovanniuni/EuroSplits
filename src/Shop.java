@@ -1,12 +1,16 @@
-public class Shop {
+import java.util.List;
+
+public class Shop extends User {
     /** class that shish **/
     double importo;
     int id;
+
 
     public Shop(double importo, int id) {
         this.importo = importo;
         this.id = id;
     }
+
 
     @Override
     public String toString() {
