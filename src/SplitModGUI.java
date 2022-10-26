@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class SplitModGUI extends JFrame implements ActionListener {
     Shop sh;
@@ -82,7 +83,7 @@ public class SplitModGUI extends JFrame implements ActionListener {
             this.setVisible(false);
         }
         else if( e.getSource() == specialSplitButton){
-            new PriceGUI(g, sh, new ArrayList<>());
+            new PriceGUI(g, sh, new ArrayList<>(), new LinkedHashMap<>());
             this.setVisible(false);
         }
         else if(e.getSource() == indietroButton){

@@ -108,11 +108,6 @@ public class AddShopGUI extends JFrame implements ActionListener {
             System.out.println("Aggiunta la spesa di importo " + totaltext.getText() + " divisa in " + idtext.getText() +
                     ", " +
                     "per gli amici " + creditortext.getText() + ", effettuata il " + datatext.getText() );
-            create.setEnabled(false);
-            totaltext.setEnabled(false);
-            idtext.setEnabled(false);
-            creditortext.setEnabled(false);
-            datatext.setEnabled(false);
             new SplitModGUI(g1, sh1);
             this.setVisible(false);
 

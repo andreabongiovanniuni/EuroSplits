@@ -77,7 +77,7 @@ public class NotEqualSplitGUI extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == assegnaButton){
             if(g.IsInGroup(usernameText.getText())){
-                m.put(g.GetUser(usernameText.getText()), Double.parseDouble(priceText.getText()));
+                m.put(g.getUser(usernameText.getText()), Double.parseDouble(priceText.getText()));
                 new NotEqualSplitGUI(g, sh, m);
 
             }

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="caricato per sicurezza, però da finire">
+    <list default="true" id="78d14715-5d5b-4903-b68c-3c898af4c012" name="Changes" comment="cambio nome attributi GUIs">
+      <change afterPath="$PROJECT_DIR$/src/ShowParticipantsGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddUserGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddUserGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DebtsGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DebtsGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LaunchPageGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaunchPageGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddShopGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddShopGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Group.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NotEqualSplitGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NotEqualSplitGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ParticipantsGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParticipantsGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PriceGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PriceGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShowGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShowGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SplitModGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SplitModGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +111,14 @@
       <workItem from="1666367184829" duration="800000" />
       <workItem from="1666368170605" duration="4523000" />
       <workItem from="1666422570830" duration="19560000" />
-      <workItem from="1666460694390" duration="3724000" />
+      <workItem from="1666460694390" duration="4407000" />
+      <workItem from="1666597338239" duration="486000" />
+      <workItem from="1666612932351" duration="633000" />
+      <workItem from="1666638988943" duration="5596000" />
+      <workItem from="1666684689300" duration="187000" />
+      <workItem from="1666684956660" duration="217000" />
+      <workItem from="1666704768260" duration="716000" />
+      <workItem from="1666711190621" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="A/N">
       <created>1665656306151</created>
@@ -169,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666464051814</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="cambio nome attributi GUIs">
+      <created>1666520102535</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666520102535</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +209,7 @@
     <MESSAGE value="update" />
     <MESSAGE value="continuo" />
     <MESSAGE value="caricato per sicurezza, però da finire" />
-    <option name="LAST_COMMIT_MESSAGE" value="caricato per sicurezza, però da finire" />
+    <MESSAGE value="cambio nome attributi GUIs" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambio nome attributi GUIs" />
   </component>
 </project>

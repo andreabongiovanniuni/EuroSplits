@@ -27,7 +27,7 @@ public class Group extends User {
         return false;
     }
 
-    public User GetUser(String s){
+    public User getUser(String s){
         for(User u : group){
             if(u.getUsername().equals(s)) return u;
         }
